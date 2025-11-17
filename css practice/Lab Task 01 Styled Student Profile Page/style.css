@@ -1,0 +1,74 @@
+/* Basic page setup */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5; /* Light gray background for the page */
+    margin: 0;
+    padding: 0;
+}
+
+/* Header and Footer Styling */
+header, footer {
+    width: 100%;
+    background-color: #004a99; /* AIUB-like blue */
+    color: white;
+    text-align: center;
+    /* [cite: 19, 20] Use padding for internal space */
+    padding: 1em 0; /* [cite: 23] Using 'em' unit */
+}
+
+/* [cite: 22] Use margin to separate sections */
+header {
+    margin-bottom: 20px; /* [cite: 23] Using 'px' unit */
+}
+
+footer {
+    margin-top: 20px; /* [cite: 23] Using 'px' unit */
+}
+
+/* [cite: 16] Profile Section Styling */
+.profile-box {
+    /* [cite: 18] Center-align the section with a fixed width */
+    width: 80%; /* [cite: 23] Using '%' unit */
+    max-width: 700px; /* Ensures it doesn't get too wide on large screens */
+    margin: auto; /* [cite: 18] Automatically centers the box horizontally */
+    
+    /* [cite: 24] Add a light background color */
+    background-color: #ffffff;
+    
+    /* [cite: 19] Applying the box model */
+    padding: 30px; /* [cite: 20] Adds padding inside the box */
+    border: 1px solid #ddd; /* [cite: 21] Adds a border around the section */
+    
+    /* Extra styling for a cleaner look */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    border-radius: 10px; /* Rounded corners for the whole box */
+}
+
+/* [cite: 23] Style the student image with rounded corners */
+.profile-pic {
+    width: 150px; /* [cite: 23] Using 'px' unit */
+    height: 150px;
+    border-radius: 50%; /* Makes the image perfectly round */
+    border: 4px solid #eee; /* Light border around the photo */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+/* Bio section styling */
+.bio {
+    margin-top: 25px;
+    text-align: left;
+    border-top: 1px solid #eee;
+    padding-top: 20px;
+}
+
+.bio h3 {
+    text-align: center;
+    color: #333;
+}
+
+.bio p {
+    font-size: 0.9em; /* [cite: 23] Using 'em' unit */
+    line-height: 1.6;
+    color: #555;
+}

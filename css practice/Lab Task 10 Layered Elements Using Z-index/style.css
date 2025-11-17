@@ -1,0 +1,61 @@
+/* Basic setup for the page */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+/* This container creates a 'stacking context' so the 
+  absolute positioning of the boxes is relative to this element.
+*/
+.container {
+    position: relative;
+    height: 400px;
+    margin-top: 30px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+}
+
+/* Common styles for all three boxes */
+.box {
+    /* Set fixed dimensions */
+    width: 250px;
+    height: 250px;
+    
+    /* 2. Set all three to position: absolute */
+    position: absolute;
+    
+    /* 5. Style text labels for readability */
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
+}
+
+/* 1. Create three overlapping <div> elements of different colors */
+/* 3. Use top and left properties to make them overlap partially */
+/* 4. Assign different z-index values */
+
+#box-1 {
+    background-color: #e63946; /* Red */
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Bottom layer */
+}
+
+#box-2 {
+    background-color: #457b9d; /* Blue */
+    top: 70px;
+    left: 70px;
+    z-index: 2; /* Middle layer */
+}
+
+#box-3 {
+    background-color: #2a9d8f; /* Green */
+    top: 120px;
+    left: 120px;
+    z-index: 3; /* Top layer */
+}
