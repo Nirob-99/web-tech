@@ -1,0 +1,47 @@
+<style>
+        /* General Body Reset */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Requirement 3: Class Selector for common styles */
+        .info-section {
+            /* Requirement 8: Adjust spacing using padding */
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        /* Requirement 4: Different background colors for each section using IDs */
+        
+        /* Section 1: About Me (Light Blue) */
+        #about-me {
+            background-color: #e3f2fd; 
+        }
+
+        /* Section 2: Education (Light Yellow) */
+        #education {
+            background-color: #fff9c4; 
+        }
+
+        /* Section 3: Hobbies (Light Pink) */
+        #hobbies {
+            background-color: #f8bbd0; 
+        }
+
+        /* Requirement 7: Custom HR styling */
+        hr {
+            background-color: #ff5722; /* Custom Color (Orange) */
+            height: 5px;               /* Custom Height */
+            width: 60%;                /* Custom Width */
+            border: none;              /* Removes default border */
+            margin: 0 auto;            /* Centers the HR */
+        }
+    </style>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Handling</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>CSS Overflow Properties</h1>
+    <p>Below are 4 boxes with fixed dimensions (300px x 200px) containing the same long text. Notice how they behave differently.</p>
+
+    <div class="box visible-box">
+        <h3>1. Overflow: Visible</h3>
+        <p>This is the default value. The overflow is not clipped. It renders outside the element's box. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+
+    <div class="box hidden-box">
+        <h3>2. Overflow: Hidden</h3>
+        <p>The overflow is clipped, and the rest of the content will be invisible. You cannot scroll to see the rest. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+
+    <div class="box scroll-box">
+        <h3>3. Overflow: Scroll</h3>
+        <p>The overflow is clipped, but a scrollbar is added to see the rest of the content. Note: Scrollbars are added even if they are not needed! Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+
+    <div class="box auto-box">
+        <h3>4. Overflow: Auto</h3>
+        <p>This is usually the best option. If overflow is clipped, a scrollbar should be added to see the rest of the content only when necessary. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+    </div>
+
+</body>
+</html>

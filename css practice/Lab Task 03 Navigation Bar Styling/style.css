@@ -1,0 +1,39 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Step 6 & 7: Set background color and ensure block-level full width */
+nav {
+    background-color: #333; /* Dark background */
+    width: 100%;            /* Spans full page width */
+    padding: 10px 0;        /* Vertical padding */
+    text-align: center;     /* Centers the links */
+}
+
+/* Styling the Links */
+nav a {
+    /* Step 2: Display links horizontally */
+    display: inline-block;
+
+    /* Step 3: Add padding and margin for spacing */
+    padding: 14px 20px;
+    margin: 0 5px;
+    
+    /* Step 4: Remove underlines */
+    text-decoration: none;
+    
+    /* Basic styling */
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+/* Step 5: Add :hover effects */
+nav a:hover {
+    background-color: #ddd; /* Light grey background on hover */
+    color: #333;            /* Dark text on hover */
+}

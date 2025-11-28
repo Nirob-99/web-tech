@@ -1,0 +1,50 @@
+/* General Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Base Styling for ALL boxes (Steps 1 & 5) */
+.box {
+    /* Step 1: Fixed Width and Height */
+    width: 300px;
+    height: 200px;
+    
+    /* Step 5: Borders and Padding */
+    border: 2px solid #333;
+    padding: 15px;
+    background-color: white;
+    
+    /* Layout: display them side-by-side for comparison */
+    display: inline-block;
+    vertical-align: top;
+    margin: 20px;
+}
+
+/* --- Step 3 & 4: Applying different Overflow values --- */
+
+/* Scenario 1: Visible */
+.visible-box {
+    /* Effect: The text spills out of the box borders and overlaps other content */
+    overflow: visible;
+    border-color: red; /* Highlighted red to show the mess it creates */
+}
+
+/* Scenario 2: Hidden */
+.hidden-box {
+    /* Effect: The text is cut off cleanly at the border. No scrollbars. */
+    overflow: hidden;
+}
+
+/* Scenario 3: Scroll */
+.scroll-box {
+    /* Effect: Adds horizontal AND vertical scrollbars, even if not needed */
+    overflow: scroll;
+}
+
+/* Scenario 4: Auto */
+.auto-box {
+    /* Effect: Adds scrollbars ONLY if the content is too long. Best practice. */
+    overflow: auto;
+}

@@ -1,0 +1,71 @@
+/* Reset basic margins */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Step 3 & 4: Sticky Header Styling */
+.sticky-header {
+    /* The Core Requirement */
+    position: sticky;
+    top: 0;
+
+    /* Styling for visibility */
+    background-color: #2c3e50; /* Dark Blue Background */
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 4px solid #3498db; /* Blue accent border */
+    
+    /* Layout for Logo and Nav side-by-side */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    /* Ensure header stays on top of content */
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Navigation Link Styling */
+.sticky-header nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    transition: color 0.3s;
+}
+
+.sticky-header nav a:hover {
+    color: #3498db; /* Change color on hover */
+}
+
+/* Step 5: Content Styling */
+.content {
+    max-width: 800px; /* Limits width for better reading */
+    margin: 40px auto; /* Centers the content block */
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    margin-top: 0;
+    color: #333;
+}
+
+.date {
+    color: #777;
+    font-style: italic;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+}

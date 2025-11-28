@@ -1,0 +1,70 @@
+/* GLOBAL RESET: Essential for layouts */
+* {
+    /* This ensures padding and border are included in the width calculation. 
+       Without this, a 20% width + 20px padding becomes wider than 20%, breaking the layout. */
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container to hold the boxes */
+.container {
+    width: 100%;
+    /* This centers the content if widths don't add up to 100% exactly */
+    text-align: center; 
+}
+
+/* Common styling for all three boxes */
+.box {
+    /* Step 2: Use display: inline-block to position side by side */
+    display: inline-block;
+    
+    /* Step 5: Align properly (aligns top of boxes instead of baseline text) */
+    vertical-align: top;
+    
+    /* Step 4: Add padding, borders, and margins */
+    padding: 20px;
+    margin-right: -4px; /* HACK: inline-block creates a 4px whitespace gap. This fixes it. */
+    
+    /* Height is optional, but helps them look uniform for the lab */
+    height: 400px; 
+    text-align: left; /* Reset text alignment inside the boxes */
+}
+
+/* --- Specific Widths and Colors (Step 3) --- */
+
+/* Sidebar: 20% width */
+.sidebar {
+    width: 20%;
+    background-color: #e3f2fd; /* Light Blue */
+    border: 2px solid #2196f3;
+}
+
+/* Main Content: 60% width */
+.main-content {
+    width: 60%;
+    background-color: #ffffff; /* White */
+    border: 2px solid #4caf50; /* Green Border */
+}
+
+/* Advertisement: 20% width */
+.advertisement {
+    width: 20%;
+    background-color: #ffe0b2; /* Light Orange */
+    border: 2px solid #ff9800;
+}
+
+/* Styling for the internal ad element */
+.ad-banner {
+    background-color: #ff5722;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight: bold;
+}

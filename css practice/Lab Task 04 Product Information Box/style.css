@@ -1,0 +1,74 @@
+/* Basic Page Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    text-align: center; /* Centers the container on the page */
+}
+
+/* Step 4: Style each box */
+.product-box {
+    /* Step 3: Show multiple boxes in one row */
+    display: inline-block;
+    
+    /* Box Dimensions & Appearance */
+    width: 250px;
+    background-color: white;
+    border: 1px solid #ccc; /* Step 4: Border */
+    
+    /* Step 4: Spacing */
+    padding: 20px;
+    margin: 15px;
+    
+    /* Step 6: Align content inside boxes */
+    text-align: center;
+    vertical-align: top; /* Ensures boxes align at the top even if text length differs */
+    
+    transition: 0.3s; /* Smooth transition for the hover effect */
+}
+
+/* Step 5: Outline effect on hover */
+.product-box:hover {
+    outline: 3px solid #007BFF; /* The blue outline */
+    outline-offset: 5px;        /* Space between border and outline */
+    cursor: pointer;
+}
+
+/* Image Styling */
+.product-box img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+/* Typography Styling */
+.product-box h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-box .desc {
+    font-size: 0.9em;
+    color: #666;
+    height: 40px; /* Fixed height to keep buttons aligned */
+}
+
+.product-box .price {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #007BFF;
+    margin: 10px 0 20px 0;
+}
+
+/* Buy Now Button Styling */
+.buy-btn {
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.buy-btn:hover {
+    background-color: #218838;
+}

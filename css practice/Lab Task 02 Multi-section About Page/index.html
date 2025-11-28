@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Colorful Profile</title>
+
+   <style>
+        /* General Body Reset */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Requirement 3: Class Selector for common styles */
+        .info-section {
+            /* Requirement 8: Adjust spacing using padding */
+            padding: 50px;
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+
+        /* Requirement 4: Different background colors for each section using IDs */
+        
+        /* Section 1: About Me (Light Blue) */
+        #about-me {
+            background-color: #e3f2fd; 
+        }
+
+        /* Section 2: Education (Light Yellow) */
+        #education {
+            background-color: #fff9c4; 
+        }
+
+        /* Section 3: Hobbies (Light Pink) */
+        #hobbies {
+            background-color: #f8bbd0; 
+        }
+
+        /* Requirement 7: Custom HR styling */
+        hr {
+            background-color: #ff5722; /* Custom Color (Orange) */
+            height: 5px;               /* Custom Height */
+            width: 60%;                /* Custom Width */
+            border: none;              /* Removes default border */
+            margin: 0 auto;            /* Centers the HR */
+        }
+    </style>
+</head>
+<body>
+
+    <div id="about-me" class="info-section">
+        <h2>About Me</h2>
+        <p>
+            Hello! I am <strong>Nirob</strong>. I am a passionate Computer Science student 
+            currently studying at American University. I love solving complex problems 
+            and learning about how operating systems and hardware work.
+        </p>
+    </div>
+
+    <hr>
+
+    <div id="education" class="info-section">
+        <h2>Education</h2>
+        <ul>
+            <li style="list-style: none; font-size: 1.2rem; color: #2e7d32; font-weight: bold;">
+                B.Sc. in Computer Science (Ongoing)
+            </li>
+            <li style="list-style: none;">American University</li>
+            <li style="list-style: none;">2022 - Present</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <div id="hobbies" class="info-section">
+        <h2>Hobbies</h2>
+        <p>
+            When I am not coding assembly language or debugging, I enjoy:
+        </p>
+        <p>
+            Gaming • Photography • Traveling • Reading Tech Blogs
+        </p>
+    </div>
+
+</body>
+</html>
