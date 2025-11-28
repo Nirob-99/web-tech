@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Nirob | CS Student Portfolio</title>
+    <meta name="author" content="Nirob">
+    <meta name="description" content="Personal portfolio of Nirob, a Computer Science student at American University seeking internship opportunities.">
+    <meta name="keywords" content="Nirob, Portfolio, Computer Science, Internship, American University, Web Development">
+
+    <style>
+        /* Basic CSS for readability */
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 0; padding: 0; }
+        header { background: #333; color: #fff; padding: 1rem; text-align: center; }
+        nav a { color: #fff; margin: 0 15px; text-decoration: none; }
+        main { padding: 20px; max-width: 800px; margin: auto; }
+        section { margin-bottom: 40px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+        table, th, td { border: 1px solid #333; }
+        th, td { padding: 10px; text-align: left; }
+        form { display: flex; flex-direction: column; max-width: 400px; }
+        input, textarea, button { margin-bottom: 15px; padding: 8px; }
+        button { background: #333; color: white; border: none; cursor: pointer; }
+        footer { background: #333; color: white; text-align: center; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Nirob</h1>
+        <p>Computer Science Student & Aspiring Developer</p>
+        <nav>
+            <a href="#about">About Me</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="about">
+            <h2>About Me</h2>
+            <p>
+                Hello! I am <strong>Nirob</strong>, a dedicated Computer Science student at 
+                American University. I am passionate about software engineering and web development. 
+                I am currently looking for an internship where I can apply my skills in HTML, CSS, 
+                and programming to real-world projects.
+            </p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Degree / Certification</th>
+                        <th>Institution</th>
+                        <th>Year</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>B.Sc. in Computer Science</td>
+                        <td>American University</td>
+                        <td>2022 - Present</td>
+                        <td>In Progress</td>
+                    </tr>
+                    <tr>
+                        <td>Higher Secondary Certificate</td>
+                        <td>Dhaka City College</td>
+                        <td>2021</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Interested in hiring me for an internship? Let's get in touch.</p>
+            
+            <form action="#" method="POST">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" placeholder="nirob" required>
+
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name="email" placeholder="nirob@example.com" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Write your message here..." required></textarea>
+
+                <button type="submit">Send Inquiry</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Nirob. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
