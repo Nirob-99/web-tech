@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CookHub Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe8d6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .login-card {
+            background-color: white;
+            width: 300px;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h2 {
+            color: #d35400;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            margin-top: 15px;
+            color: #333;
+            font-weight: bold;
+            font-size: 14px;
+        }
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 5px; 
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #e67e22;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #d35400;
+        }
+        #message {
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        .register-link {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #666;
+        }
+        .register-link a {
+            color: #e67e22;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-card">
+
+    <h2>Login</h2>
+
+    <label for="username">Email / Username</label>
+    <input type="text" id="username" placeholder="Enter your Email/username">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter your password">
+
+    <button onclick="checkLogin()">Login</button>
+    
+    <div id="message"></div>
+
+    <p class="register-link">
+        No account? <a href="registration.php">Register here</a>
+    </p>
+</div>
+
+<script>
+    function checkLogin() {
+        var u = document.getElementById("username").value.trim(); 
+        var p = document.getElementById("password").value;
+        var msg = document.getElementById("message");
+
+        if ((u === "admin" || u === "admin@gmail.com") && p === "1234") {
+            msg.style.color = "green";
+            msg.innerText = "Login Successful!";
+        } else {
+            msg.style.color = "red";
+            msg.innerText = "Wrong email/username or password.";
+        }
+    }
+</script>
+
+</body>
+</html>
